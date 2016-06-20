@@ -1,0 +1,11 @@
+.table{
+  border-collapse: collapse; border: 1px solid black;height: 900px;display: inline-block;height: 100%;border: 1; align:center;
+}
+
+.table th{
+  padding:0.5em; border:1px solid black; color: white; background-color:grey;white-space: nowrap;text-align: left;
+}
+
+.table td{
+  border:1px solid black; padding-right:20px;text-align: left;
+}
