@@ -1,4 +1,4 @@
-require 'rss_get'
+require 'rss'
 
 class TopController < ApplicationController
   def index
