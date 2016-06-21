@@ -1,6 +1,27 @@
 <p id="notice"><%= notice %></p>  
-<table>
+<table class="table1">
     <tr>
       <th>RSSリンク</th>
+      <td>http://tech.uzabase.com/rss<td>
     </tr>
+</table>
+
+<table class="table2">
+  <thead>
+    <tr>
+      <th>タイトル(10文字)</th>
+      <th>本文(30文字)</th>
+      <th>発効日</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @uzabase_rss_summary.items.each do |item| %>
+      <tr>
+        <td><%= title_limit(item.title) %></td>
+        <td><%= dscrpt_limit(item.description) %></td>
+        <td><%= item.pubDate.strftime('%Y年%m月%d日 %H時%M分%S秒') %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>

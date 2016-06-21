@@ -1,11 +1,22 @@
-.table{
+.table1{
   border-collapse: collapse; border: 1px solid black;height: 900px;display: inline-block;height: 100%;border: 1; align:center;
 }
 
-.table th{
+.table1 th{
   padding:0.5em; border:1px solid black; color: white; background-color:grey;white-space: nowrap;text-align: left;
 }
 
-.table td{
+.table1 td{
   border:1px solid black; padding-right:20px;text-align: left;
+}
+
+.table2{
+  border-collapse: collapse; table-layout: fixed;text-align: left;
+}
+
+.table2 th{
+  padding:0.5em; border:1px dotted grey;color: black; background-color:#E6E6FA;min-width:150px; 
+}
+.table2 td{
+  padding:0.5em; border:1px dotted grey;margin: 0 auto; padding-right:20px; padding-left:20px;
 }
